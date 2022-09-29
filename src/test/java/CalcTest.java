@@ -13,10 +13,10 @@ public class CalcTest {
         driver.manage().window().maximize();
         calcPage = new CalcPage(driver);
     }
-//    @AfterClass
-//    public void quit(){
-//        calcPage.getDriver().quit();
-//    }
+    @AfterClass
+    public void quit(){
+        calcPage.getDriver().quit();
+    }
     @AfterMethod
     public void sleep() throws InterruptedException {
         calcPage.clearInput();
